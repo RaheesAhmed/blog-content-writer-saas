@@ -10,6 +10,11 @@ AI Blog Writer is an innovative tool designed to streamline the content creation
 
 ![AI Blog Writer](./public/screenshot.png)
 
+
+User Dashboard
+
+![AI Blog Writer](./public/dashboard.png)
+
 ## Features
 
 - **Article Generation**: Create full-length articles on any given topic.
