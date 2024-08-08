@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI Blog Writer
 
-## Getting Started
+## 🚧 Under Development 🚧
 
-First, run the development server:
+This project is currently in active development. Features may be incomplete or subject to change.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Description
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+AI Blog Writer is an innovative tool designed to streamline the content creation process for professional and educational blogging. Leveraging the power of artificial intelligence, this application helps users generate outlines, suggest relevant statistics, and draft full articles based on given topics or keywords.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![AI Blog Writer](./public/screenshot.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Features
 
-## Learn More
+- **Article Generation**: Create full-length articles on any given topic.
+- **Customizable Content**: Tailor your content with options for:
+  - Article Type (Informative, Persuasive, How-To Guide, Listicle, Comparison)
+  - Target Audience (General, Professional, Academic, Technical)
+  - Word Count
+  - Tone (Neutral, Formal, Casual, Optimistic, Critical)
+- **Markdown Support**: Generated articles are formatted in Markdown for easy editing and publishing.
+- **Syntax Highlighting**: Code snippets within articles are automatically syntax-highlighted.
+- **Copy to Clipboard**: Easily copy the generated article with a single click.
+- **Responsive Design**: Seamless experience across desktop and mobile devices.
 
-To learn more about Next.js, take a look at the following resources:
+## Technology Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next.js 14
+- React
+- TypeScript
+- Tailwind CSS
+- React Markdown
+- React Syntax Highlighter
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Setup and Installation
 
-## Deploy on Vercel
+1. Clone the repository:
+   ```
+   git clone https://github.com/RaheesAhmed/blog-content-writer-saas.git
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Navigate to the project directory:
+   ```
+   cd blog-content-writer-saas
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3. Install dependencies:
+   ```
+   npm install
+   ```
+
+   rename the  `.env.local` to `.env`  and add following:
+
+   ```
+   OPENAI_API_KEY=add your openai api key here
+   ```
+
+4. Run the development server:
+   ```
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+
+## Usage
+
+1. Navigate to the "Draft Full Article" page.
+2. Enter your article topic in the input field.
+3. Select the article type and target audience from the dropdown menus.
+4. (Optional) Adjust advanced settings like word count and tone.
+5. Click "Generate Article" and wait for the AI to create your content.
+6. The generated article will appear in the right panel, formatted in Markdown.
+7. Use the copy button to easily copy the entire article to your clipboard.
+
+## API Integration
+
+The application is designed to work with a custom API endpoint for article generation. Ensure your API is set up and running at `http://localhost:3000/api/blog/write`.
+
+## Contributing
+
+As this project is under development, contributions are welcome. Please feel free to submit pull requests or create issues for bugs and feature requests.
+
+## License
+
+[MIT License](LICENSE)
+
+## Contact
+
+For any queries or suggestions, please open an issue in this repository.
